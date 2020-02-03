@@ -25,12 +25,19 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="video-section">
             <iframe id="video" height="" src="" frameborder="" allowfullscreen></iframe>
         </section>
-        <section>
+        <section id="products-section">
+
+        </section>
+        <section id="form-section">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" type="email" placeholder="Put you email here" required/>
+                <p>Do you want to enjoy it?</p>
+                <label class="input-label">Name</label>
+                <input id=name class="input-section" type="text" placeholder="Enter your name" required/>
+                <label class="input-label">Email</label>
+                <input id="email" class="input-section" type="email" placeholder="Enter your email addres" required/>
                 <input id="submit" type="submit" value="Submit">
             </form>
         </section>

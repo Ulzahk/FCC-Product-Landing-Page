@@ -4,7 +4,7 @@ body{
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
-    grid-template-rows: 0.5fr 5fr 2fr;
+    grid-template-rows: 0.5fr 5fr 1fr;
 }
 
 header{
@@ -39,7 +39,7 @@ ul li{
 }
 
 .item-li{
-    padding: 25px 25px 25px 25px;
+    padding: 25px 15px 25px 15px;
 }
 ul li:hover{
     background-color: #01234d;
@@ -71,12 +71,94 @@ ul li a{
 
 #video{
     width: 90%;
-    height: auto;
     height: 400px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6)
 }
- #form-section{
+
+#services-section{
+    background-color: blanchedalmond;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    padding-right: 5%;
     padding-top: 3%;
+}
+
+.card{
+    border: 1px solid #A9A9A9;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20%;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.card:hover{
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,0.5);
+    border-color: black;
+}
+
+.special-card{
+    margin-bottom: -3%;
+    padding-bottom: 2%;
+}
+
+hr {
+    width: 100%;
+}
+
+.card-header{
+    color:royalblue;
+    line-height: 0.5;
+    background-color: white;
+}
+
+
+.service-title{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.price-text{
+    font-weight: bolder;
+    font-size: 30px;
+    color: royalblue;
+}
+
+
+.price-time{
+    font-weight: bold;
+}
+
+.terms{
+    font-size: 10px;
+    color: grey;
+}
+
+.button{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+ #form-section{
+    padding-top: 4%;
     padding-left: 30%;
+    padding-bottom: 2%;
  }
 
 #form-section form{
@@ -114,6 +196,64 @@ ul li a{
     margin-left: 45%;
 }
 
+footer{
+    background-color: grey;
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+@media (max-width:900px){
+    #services-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .special-card{
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .card-header{
+        grid-column: 1/2;
+    }
+
+    .service-title{
+        font-size: 25px;
+        font-weight: bolder;
+        padding-top: 3%;
+    }
+
+    .card-body{
+        display: none;
+    }
+
+
+    .card-footer{
+        grid-column: 2/3;
+    }
+
+    .price-text{
+        font-size: 16px;
+
+    }
+
+    .terms{
+        font-size: 8px;
+    }
+    
+    .button{
+        padding: 10px;
+    }
+
+
+}
 
 
 
@@ -145,6 +285,61 @@ ul li a{
     .active{
         display: block;
     }
+
+    #video{
+        width: 90%;
+        height: 150px;
+    }
+
+    #services-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .special-card{
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .card-header{
+        grid-column: 1/2;
+    }
+
+    .service-title{
+        font-size: 20px;
+        font-weight: bolder;
+        padding-top: 3%;
+    }
+
+    .card-body{
+        display: none;
+    }
+
+
+    .card-footer{
+        grid-column: 2/3;
+    }
+
+    .price-text{
+        font-size: 12px;
+
+    }
+
+    .terms{
+        font-size: 7px;
+    }
+    
+    .button{
+        padding: 5px;
+    }
+    
 
     #submit{
         margin-left: 35%;

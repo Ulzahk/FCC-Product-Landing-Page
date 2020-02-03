@@ -26,18 +26,77 @@
     </header>
     <main>
         <section id="video-section">
-            <iframe id="video"  src="https://www.youtube.com/embed/21eFwbb48sE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/21eFwbb48sE" frameborder="1"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
-        <section id="products-section">
-
+        <section id="services-section">
+            <div id="service1" class="card">
+                <div class="card-header">
+                    <h3 class="service-title">2000 Mbps</h3>
+                    <p>of internet speed</p>
+                </div>
+                <div class="card-body">
+                    <p>Upload a 5-minute HD video in less than 1 second</p>
+                    <hr>
+                    <p>Excellent for work & play on multiple devices</p>
+                    <hr>
+                    <p>Have fun with HD videos</p>
+                </div>
+                <div class="card-footer">
+                    <p><label class="price-text">$COP 230.000</label><label class="price-time">/mo.</label></p>
+                    <p class="terms">for 12 months plus taxes & equip fee</p>
+                    <a href="#" class="button">Enjoy Now</a>
+                </div>
+            </div>
+            <div id="service2" class="card special-card">
+                <div class="card-header">
+                    <h3 class="service-title">1000 Mbps</h3>
+                    <p>of internet speed</p>
+                </div>
+                <div class="card-body">
+                    <p>Upload a 5-minute HD video in less than 1 second</p>
+                    <hr>
+                    <p>Excellent for work & play on multiple devices</p>
+                    <hr>
+                    <p>Have fun with HD videos</p>
+                    <hr>
+                    <p>Professional installation included</p>
+                    <hr>
+                    <p>Fast online speeds for the whole family</p>
+                </div>
+                <div class="card-footer">
+                    <p><label class="price-text">$COP 180.000</label><label class="price-time">/mo.</label></p>
+                    <p class="terms">for 12 months plus taxes & equip fee</p>
+                    <a href="#" class="button">Enjoy Now</a>
+                </div>
+            </div>
+            <div id="service3" class="card">
+                <div class="card-header">
+                    <h3 class="service-title">500 Mbps</h3>
+                    <p>of internet speed</p>
+                </div>
+                <div class="card-body">
+                    <p>Upload a 5-minute HD video in less than 1 second</p>
+                    <hr>
+                    <p>Excellent for work & play on multiple devices</p>
+                    <hr>
+                    <p>Have fun with HD videos</p>
+                </div>
+                <div class="card-footer">
+                    <p><label class="price-text">$COP 160.000</label><label class="price-time">/mo.</label></p>
+                    <p class="terms">for 12 months plus taxes & equip fee</p>
+                    <a href="#" class="button">Enjoy Now</a>
+                </div>
+            </div>
         </section>
         <section id="form-section">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <p>Do you want to enjoy it?</p>
                 <label class="input-label">Name</label>
-                <input id=name class="input-section" type="text" placeholder="Enter your name" required/>
+                <input id=name class="input-section" type="text" placeholder="Enter your name" required />
                 <label class="input-label">Email</label>
-                <input id="email" class="input-section" type="email" placeholder="Enter your email addres" required/>
+                <input id="email" class="input-section" type="email" placeholder="Enter your email addres" required />
                 <input id="submit" type="submit" value="Submit">
             </form>
         </section>
@@ -48,11 +107,12 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.menu').click(function(){
+        $(document).ready(function () {
+            $('.menu').click(function () {
                 $('ul').toggleClass('active')
             })
         })
     </script>
 </body>
+
 </html>

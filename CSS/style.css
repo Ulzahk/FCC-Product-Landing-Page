@@ -60,12 +60,23 @@ ul li a{
 }
  main{
     grid-column: 2/3;
+    grid-row: 2/3;
     background-color: royalblue;
  }
 
+#video-section{
+    padding-top: 3%;
+    padding-left: 10%;
+ }
+
+#video{
+    width: 90%;
+    height: auto;
+    height: 400px;
+}
  #form-section{
-    margin-left: 18%;
-    margin-right: -18%;
+    padding-top: 3%;
+    padding-left: 30%;
  }
 
 #form-section form{
@@ -95,12 +106,15 @@ ul li a{
     padding-top: 2%;
     padding-bottom: 2%;
     margin-left: 2%;
+    border-radius: 4px;
  }
 
  #submit{
     margin-left: 45%;
     margin-left: 45%;
 }
+
+
 
 
 
@@ -131,6 +145,12 @@ ul li a{
     .active{
         display: block;
     }
+
+    #submit{
+        margin-left: 35%;
+        margin-left: 35%;
+    }
+    
 }
 
 

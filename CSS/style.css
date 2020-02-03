@@ -2,16 +2,36 @@ body{
     margin:0;
     padding:0;
     font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr 2fr;
 }
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
 nav {
     width: 100%;
-    background: #00316b;
+    background: #1F2D45;
 }
 ul{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 0;
 }
+
+#Logo-li{
+    margin-right: -15%;
+}
+
+#Logo-image{
+    width: 50%;
+    height: auto;
+}
+
+
 ul li{
     list-style: none;
     display: inline-block;
@@ -35,7 +55,7 @@ ul li a{
     display:none;
 }
  main{
-     grid: ;
+    
  }
 
 @media (max-width:600px){

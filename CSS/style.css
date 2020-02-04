@@ -6,7 +6,7 @@ body{
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
-    grid-template-rows: 0.5fr 5fr 1fr;
+    grid-template-rows: 0.2fr 5fr 1fr;
 }
 
 header{
@@ -71,7 +71,7 @@ ul li a{
 #video-section{
     padding-top: 3%;
     padding-left: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     padding-right: 2%;
  }
 
@@ -79,6 +79,52 @@ ul li a{
     width: 100%;
     height: 400px;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+#features-list{
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+#headset{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: white;
+    font-size: 10vh;
+    text-shadow:2px 2px 2px #000000;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+
+#technical{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: white;
+    font-size: 10vh;
+    text-shadow:2px 2px 2px #000000;
+    padding-bottom: 10%;
+    padding-top: 20%
+}
+
+
+#receipt{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: white;
+    font-size: 10vh;
+    text-shadow:2px 2px 2px #000000;
+    padding-bottom: 10%;
+    padding-top: 30%;
+    padding-left: 10%
+}
+
+.feature-text{
+    color: white;
+    font-size: 4vh;
 }
 
 h2 {
@@ -103,7 +149,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
     padding-right: 5%;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 5%;
 }
 
@@ -263,18 +309,67 @@ hr {
 footer{
 
     margin-top: 3%;
-    background-color: rgb(12, 104, 196);
+    background-color:  #0c328a;
     grid-row: 3/4;
     grid-column: 1/4;
     display: flex;
 }
 
-@media (max-width:900px){
+@media (max-width:1100px){
 
     #video{
         width: 99%;
         height: 400px;
     }
+
+    #features-list{
+        display: grid;
+        grid-template-columns: 0.5fr 4fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    #headset{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 1%;
+        padding-top: 50%;
+        padding-right: 20%;
+    }
+    
+    
+    #technical{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 10%;
+        padding-top: 80%;
+        padding-right: 20%;
+    }
+    
+    
+    #receipt{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 10%;
+        padding-top: 80%;
+        padding-left: 10%
+    }
+    
+    .feature-text{
+        color: white;
+        font-size: 3vh;
+    }
+
     #services-section{
         display: grid;
         grid-template-columns: 1fr;
@@ -361,6 +456,69 @@ footer{
     #video{
         width: 98%;
         height: 150px;
+    }
+
+    #features-list{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 0.1fr 1% 0.1fr 1% 0.1fr 1%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        margin-bottom: -65%;
+    }
+    
+    #headset{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 1%;
+        padding-top: 10%;
+        padding-right: 6%;
+    }
+    
+    #headset-text{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #technical{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 1%;
+        padding-top: 55%;
+        padding-right: 6%;
+    }
+    
+    #technical-text{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    #receipt{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        color: white;
+        font-size: 6vh;
+        text-shadow:2px 2px 2px #000000;
+        padding-bottom: 1%;
+        padding-top: 70%;
+        padding-right: 16%;
+    }
+    
+    #receipt-text{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .feature-text{
+        color: white;
+        font-size: 3vh;
     }
 
     #services-section{

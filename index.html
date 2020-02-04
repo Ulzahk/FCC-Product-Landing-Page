@@ -32,7 +32,12 @@
             <div id="features">
                 <h2>An Oportunity to be with the Person You Care About Every Moment of the Day</h2>
                 <div id="features-list">
-
+                    <i id="headset" class="fas fa-headset"></i>
+                    <p id="headset-text" class="feature-text">Call Support 24/7 to help you if a problem presents.</p>
+                    <i id="technical"class="fas fa-wrench"></i>
+                    <p id="technical-text" class="feature-text">We have the best technical teams to repair any ussue that you have.</p>
+                    <i id="receipt" class="fas fa-file-invoice-dollar"></i> 
+                    <p id="receipt-text" class="feature-text">Notification, messages and email about your services status, monthly fees and daily usage</p>                
                 </div>
             </div>
         </section>
@@ -109,7 +114,8 @@
                 <label class="input-label">Name</label>
                 <input name="name" id=name class="input-section" type="text" placeholder="Enter your name" required />
                 <label class="input-label">Email</label>
-                <input name="email" id="email" class="input-section" type="email" placeholder="Enter your email addres" required />
+                <input name="email" id="email" class="input-section" type="email" placeholder="Enter your email addres"
+                    required />
                 <p class="form-terms">If you press Contact Me you are accepting Terms & conditions</p>
                 <input id="submit" type="submit" class="button-submit" value="Contact Me">
             </form>
@@ -126,6 +132,15 @@
                 $('ul').toggleClass('active')
             })
         })
+
+        $(function () {
+            $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top + -75
+                }, 1000);
+            });
+        });
     </script>
 </body>
 

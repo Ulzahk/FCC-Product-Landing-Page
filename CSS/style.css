@@ -33,13 +33,14 @@ ul{
     margin-right: -205px;
     margin-bottom: -15px;
     margin-top: -20px;
+    cursor: pointer;
 }
 
 
 ul li{
     list-style: none;
     display: inline-block;
-    padding: 25px;
+    padding: 20px;
 }
 
 .item-li{

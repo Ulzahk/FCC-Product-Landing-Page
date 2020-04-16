@@ -1,7 +1,9 @@
 # FCC-Product-Landing-Page
-## Objective
+
+### Objective 🎯
 Build a Product Landing Page about any product or service following the user requirements.
-### User Requirements
+
+### User Requirements 📜
 - Have a **header** element with an **id header**.
 - An image inside the **header** element with a corresponding **id header**.
 - Within the **header** element, It has an **nav** label with the corresponding **id nav-bar**.
@@ -15,7 +17,8 @@ Build a Product Landing Page about any product or service following the user req
 - The navbar should always be at the top of the **viewport**.
 - The product landing page should have at least one **media query**.
 - The product landing page should utilize **CSS flexbox** at least once.
-### Tools That Can Be Used
+
+### Tools That Can Be Used 🛠
 - HTML
 - CSS
 - JavaScript
